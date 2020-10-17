@@ -9,7 +9,9 @@ namespace GradeBook.GradeBooks
     {
 
         //public GradeBookType Type { get; set; }
-        public RankedGradeBook(string name) :base(name)
+
+        //public new bool IsWeighted { get; set; }
+        public RankedGradeBook(string name, Boolean isWeighted) : base(name, isWeighted)
         {
             this.Type = GradeBookType.Ranked;
         }
