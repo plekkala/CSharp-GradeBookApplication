@@ -19,7 +19,7 @@ namespace GradeBook.GradeBooks
         {
             if (Students.Count < 5)
             {
-                throw new InvalidOperationException();
+                throw new InvalidOperationException("Ranked-grading requires a minimum of 5 students to work");
             }
 
             int j = 0;
@@ -34,7 +34,7 @@ namespace GradeBook.GradeBooks
             }
 
             
-            double rank = (j * 100)/ Students.Count;
+            double rank = ((Students.Count-j-1 ) * 100)/ Students.Count;
 
 
 
