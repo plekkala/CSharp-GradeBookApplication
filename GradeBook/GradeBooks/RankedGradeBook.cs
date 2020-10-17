@@ -11,7 +11,7 @@ namespace GradeBook.GradeBooks
         //public GradeBookType Type { get; set; }
         public RankedGradeBook(string name) :base(name)
         {
-            this.Type = GradeBookType.Standard;
+            this.Type = GradeBookType.Ranked;
         }
        
     }
